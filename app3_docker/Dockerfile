@@ -14,9 +14,8 @@ RUN poetry install --no-root
 
 # copy source code and install again
 COPY src /app/src
-COPY flask_run.py /app/
 RUN poetry install
 
 # run code
-ENV FLASK_APP=flask_run.py
+ENV FLASK_APP=flaskapp
 CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]

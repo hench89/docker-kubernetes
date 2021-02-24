@@ -1,5 +1,5 @@
 import pytest
-from src.logic import my_function
+from functions import my_function
 
 def test1():
     result_code, result_value = my_function(10,10,10)
