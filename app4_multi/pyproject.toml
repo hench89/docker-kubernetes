@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "hch_docker"
+version = "0.1.0"
+description = ""
+authors = ["Henrik Christoffersen <hchristoffersen100@gmail.com>"]
+
+packages = [
+  { include = "flaskapp", from = "src" },
+  { include = "logic", from = "src" },
+  { include = "tests", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Flask = "^1.1.2"
+Flask-WTF = "^0.14.3"
+redis = "^3.5.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

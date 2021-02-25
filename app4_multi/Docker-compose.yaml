@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  flask-service:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./src/flaskapp:/app/src/flaskapp
+      - ./src/flaskapp/templates:/app/src/flaskapp/templates
+    environment:
+      FLASK_ENV: development
+  redis-service:
+    image: "redis:alpine"
