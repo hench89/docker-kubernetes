@@ -14,7 +14,7 @@ docker-build: Dockerfile
 docker-run: docker-build
 	docker run --init -it -p=$(PORT):$(PORT) $(APP_NAME)
 
-docker-test: docker-build
+docker-test:
 	docker run $(APP_NAME) poetry run pytest
 
 docker-bash:
