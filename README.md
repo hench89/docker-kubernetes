@@ -1,29 +1,11 @@
 # Working with Docker and Kuberneters
 
-In this project, I am creating a few a simple apps to learn about python and devops.
-The different apps touch basic concepts of working with:
+This project includes a few examples to get started with docker and kubernetes. The examples also serve as introduction to other technology/tools, including:
 
 * git/github
+* python
 * poetry package manager
-* debian linux distribution (manage and run code)
+* debian linux distribution
 * makefile
-* docker
-* kubernetes (minikube/cubectl/cubectx)
-* ci/cd (testing and deployment)
-
-
-## Configuration
-
-* VSCode: To hide pycache files/folders: https://m3lles.medium.com/how-to-hide-unwanted-folders-and-files-in-visual-studio-code-2bb0f39c4251
-* VSCode: Pickup correct venv interpreter: https://stackoverflow.com/a/59706048 (add "~/.venv" to the settings)
-* Debian: Make sure to have pip installed and updated: https://linuxize.com/post/how-to-install-pip-on-debian-9/#install-pip-for-python-2
-* Debian: Sometimes docker service wont start https://github.com/docker/compose/issues/7495 (update variable in ~/.docker/config.json)
-
-## Articles
-
-* Flask: Making a simple Hello World app: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
-* Python: Using relative path for python imports: https://stackoverflow.com/a/28392732
-* Python: Using Namespace package vs regular packages: https://stackoverflow.com/a/48804718
-* Poetry: Add additional package references to pythonpath: https://python-poetry.org/docs/pyproject/#packages
-* Docker-compose: https://docs.microsoft.com/en-us/visualstudio/docker/tutorials/multi-container-apps
-* Docker-compose: https://docs.docker.com/compose/gettingstarted/
+* ci/cd
+* vscode
