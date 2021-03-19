@@ -5,9 +5,5 @@ This section is based on training by "Techworld with Nana" to go through a few o
 Sections include
 
 * kubectl: how to interact with pods, including CRUD operations and debugging
-* namespeces: how
-
-
-# Resources
-
-* [Introduction to run k8s on Windows](https://kubernetes.io/blog/2020/05/21/wsl-docker-kubernetes-on-the-windows-desktop/)
+* kubens+kubectx: how to navigate namespaces and context (different kubernetes clusters)
+* deployment to kubernetes: how push docker images to container registries and run it on kubernetes
