@@ -1,5 +1,5 @@
-APP_NAME=mycontainer
-PORT=5000
+APP_NAME=multi-docker-app
+APP_PORT=5000
 
 compose-build:
 	docker-compose build
@@ -14,7 +14,7 @@ docker-build: Dockerfile
 	docker build -t $(APP_NAME) .
 
 docker-run: docker-build
-	docker run --init -it -p=$(PORT):$(PORT) $(APP_NAME)
+	docker run --init -it -p=$(APP_PORT):$(APP_PORT) $(APP_NAME)
 
 docker-test: docker-build
 	docker run $(APP_NAME) poetry run pytest

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: DEPLOYMENTNAME
+  labels:
+    app: DEPLOYMENTLABEL
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: DEPLOYMENTLABEL
+  template:
+    metadata:
+      labels:
+        app: DEPLOYMENTLABEL
+    spec:
+      containers:
+      - name: CONTAINERNAME
+        image: LOGINSERVER/IMAGE:TAG
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+        - name: SECRETNAME

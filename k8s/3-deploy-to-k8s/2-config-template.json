@@ -1,0 +1,7 @@
+{
+	"auths": {
+		"LOGINSERVER": {
+			"auth": "BASE64(USERNAME:PASSWORD)"
+		}
+	}
+}

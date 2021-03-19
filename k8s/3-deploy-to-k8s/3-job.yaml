@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: JOBNAME
+spec:
+  template:
+    spec:
+      containers:
+        - name: CONTAINERNAME
+          image: LOGINSERVER/IMAGE:TAG
+      restartPolicy: Never
+      imagePullSecrets:
+        - name: SECRETNAME
